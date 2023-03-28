@@ -30,7 +30,13 @@ export class Roller {
     //      key (value rolled) has an updated value that increases the number
     //      of rolls for that face by 1
     roll(value: number): number{
-        return value;
+        if (value < 1 || value > this._faces) {
+            return 0;
+        } else {
+            this._last = value;
+            this._distribution.set(value, this._distribution.get(value) + 1);
+            return value;
+        }
     }
 
     // returns the value of the latest die roll. If no rolls have been made
