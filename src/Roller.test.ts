@@ -34,20 +34,6 @@ describe('Roller', () => {
     expect(roller.distribution().get(5)).toBe(0);
     expect(roller.distribution().get(6)).toBe(0);
     expect(roller.distribution().get(10)).toBeUndefined();
-
-  //   const value = roller.roll(10);
-  // expect(value).toBe(0);
-  // expect(roller.last()).toBe(0);
-  // const distribution = roller.distribution();
-  // expect(distribution instanceof Map).toBe(true);
-  // expect(distribution.get(1)).toBe(0);
-  // expect(distribution.get(2)).toBe(0);
-  // expect(distribution.get(3)).toBe(0);
-  // expect(distribution.get(4)).toBe(0);
-  // expect(distribution.get(5)).toBe(0);
-  // expect(distribution.get(6)).toBe(0);
-  // expect(distribution.get(10)).toBeUndefined();
-
   });
 
   test('Roller should update the distribution of rolls', () => {
