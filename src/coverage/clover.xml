@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1680024917385" clover="3.2.0">
+  <project timestamp="1680024917388" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4" elements="25" coveredelements="25" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+    <file name="Roller.ts" path="/sandbox/src/Roller.ts">
+      <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="5" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="16" count="6" type="stmt"/>
+      <line num="17" count="6" type="stmt"/>
+      <line num="18" count="36" type="stmt"/>
+      <line num="33" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="36" count="4" type="stmt"/>
+      <line num="37" count="4" type="stmt"/>
+      <line num="38" count="4" type="stmt"/>
+      <line num="45" count="2" type="stmt"/>
+      <line num="54" count="10" type="stmt"/>
+    </file>
+  </project>
+</coverage>
