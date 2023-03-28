@@ -13,6 +13,10 @@ export class Roller {
             this._faces = 6;
         }
         this._last = 0;
+        this._distribution = new Map<number, number>();
+        for (let i = 1; i <= this._faces; i++) {
+            this._distribution.set(i, 0);
+        }
     }
 
     // specifies which number should be rolled and returns the recorded roll. 
@@ -41,6 +45,6 @@ export class Roller {
     // rolled. Even if a face has not yet been rolled, its key should have a
     // value of 0.
     distribution(): Map<number, number>{
-        return new Map<number, number>();
+        return new Map<number, number>(this._distribution);
     }
 } // end of Roller class
