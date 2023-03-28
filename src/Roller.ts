@@ -7,7 +7,7 @@ export class Roller {
     // so any invalid values should default to 6 to represent the common 
     // six-sided die.
     constructor(faces: number) {
-        if (faces >= 2) {
+        if (faces > 2) {
             this._faces = faces;
         } else {
             this._faces = 6;
@@ -30,7 +30,7 @@ export class Roller {
     //      key (value rolled) has an updated value that increases the number
     //      of rolls for that face by 1
     roll(value: number): number{
-        if (value < 1 || value > this._faces) {
+        if (value <= 1 || value > this._faces) {
             return 0;
         } else {
             this._last = value;
