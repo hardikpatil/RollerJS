@@ -7,7 +7,12 @@ export class Roller {
     // so any invalid values should default to 6 to represent the common 
     // six-sided die.
     constructor(faces: number) {
-        faces;
+        if (faces >= 2) {
+            this._faces = faces;
+        } else {
+            this._faces = 6;
+        }
+        this._last = 0;
     }
 
     // specifies which number should be rolled and returns the recorded roll. 
@@ -27,7 +32,7 @@ export class Roller {
     // returns the value of the latest die roll. If no rolls have been made
     // yet, then it should return 0.
     last(): number {
-        return 0;
+        return this._last;
     }
 
     // returns a Map that represents the current distribution of rolls for each
